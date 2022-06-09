@@ -1,71 +1,138 @@
 $Title-Font: "DM Serif Text";
 $P-Font: "DM Sans";
 
+@mixin backgroundImage {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: 3px solid rgba(128, 128, 128, 0.251);
+}
+@mixin flexboxCentre {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+}
+
 .section2-wrapper{
       text-align: center;
       .title-container{
             margin-top: 5em;
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1.7em;
       }
-      .work1-container{
+      .work1-wrapper{
             margin-top: 5em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin-left: 10%;
+            width: 100vw;
+           @include flexboxCentre();
+           flex-direction: row;
             gap: 2em;
+            .work1-img{
+                  height: 20em;
+                  width: 20em;
+                  @include backgroundImage();
+                  background-size: contain;
+                  border: none;
+                  background-image: url("../../Assets/Group\ 2.png");
+                   #work-num{
+                  text-align: center;
+                  margin-left: -.5em;
+                  font-size: 15em;
+                  color: #EF8094;
+            }
+            }
             .work1-info{
+                  width: 40vw;
                   h1{
                         width: 10em;
                         font-family: $Title-Font;
                         text-align: left;
+                        font-size: 2em;
                   }
                   p{
-                        width: 20em;
+                        width: 22em;
                         font-family: $P-Font;
                         text-align: left;
                         margin-top: 10px;
+                        word-spacing: 0.02em;
+                        font-size: 1.1em;
                   }
             }
       }
-      .work2-container{
+      .work2-wrapper{
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-left: 15%;
+            .work2-img{
+                  height: 20em;
+                  width: 60em;
+                  @include backgroundImage();
+                  background-image: url("../../Assets/Group\ 1.png");
+                  border: none;
+                   #work-num{
+                  text-align: center;
+                  margin-left: -1.4em;
+                  margin-top: .8em;
+                  font-size: 15em;
+                  color: #EF8094;
+            }
+            }
             .work2-info{
-                  margin-top: -11em;
-                  margin-left: 5%;
+                  margin-left: 12em;
                   h1{
                         text-align: left;
                         width: 8em;
                         font-family: $Title-Font;
+                        font-size: 2em;
                   }
                   p{
                         text-align: left;
                         width: 22em;
+                        font-size: 1.1em;
                         font-family: $P-Font;
                         margin-top: 10px;
+                        word-spacing: 0.02em;
+
                   }
             }
       }
-      .work3-container{
+      .work3-wrapper{
             margin-top: 5em;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 2em;
+            .work3-img{
+                  width: 25em;
+                  height: 30em;
+                  @include backgroundImage();
+                  background-size: contain;
+                  background-image: url("../../Assets/Mask\ Group.png");
+                  border: none;
+                   #work-num{
+                  text-align: center;
+                  margin-left: -1em;
+                  margin-top: 0em;
+                  font-size: 15em;
+                  color: #EF8094;
+            }
+            }
             .work3-info{
                   h1{
                         width: 10em;
                         font-family: $Title-Font;
                         text-align: left;
+                        font-size: 2em;
                   }
                   p{
                         text-align: left;
                         width: 25em;
                         font-family: $P-Font;
                         margin-top: 10px;
+                        word-spacing: 0.02em;
+
                   }
             }
       }
@@ -99,79 +166,116 @@ $P-Font: "DM Sans";
             text-align: center;
             font-size: 1.2em;
       }
-      .work1-container{
+       .work1-wrapper{
             margin-top: 5em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin-left: 0%;
+            width: 100vw;
+           @include flexboxCentre();
+           flex-direction: row;
             gap: 2em;
-            img{
-                  width: 15em;
+            .work1-img{
+                  height: 20em;
+                  width: 20em;
+                  @include backgroundImage();
+                  background-size: contain;
+                  border: none;
+                  background-image: url("../../Assets/Group\ 2.png");
+                   #work-num{
+                  text-align: center;
+                  // margin-left: -.5em;
+                  font-size: 10em;
+                  color: #EF8094;
+            }
             }
             .work1-info{
+                  width: 40vw;
                   h1{
                         width: 10em;
                         font-family: $Title-Font;
                         text-align: left;
-                        font-size: 1.5em;
+                        font-size: 2em;
                   }
                   p{
-                        width: 20em;
+                        width: 45vw;
                         font-family: $P-Font;
-                        font-size: .9em;
                         text-align: left;
                         margin-top: 10px;
+                        word-spacing: 0.02em;
+                        font-size: 1.1em;
                   }
             }
       }
-      .work2-container{
-            margin-top: -10em;
+      .work2-wrapper{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-left: 15%;
-            img{
-                  width: 55em;
+            margin-left: 0%;
+            .work2-img{
+                  height: 20em;
+                  width: 60em;
+                  @include backgroundImage();
+                  background-image: url("../../Assets/Group\ 1.png");
+                  border: none;
+                   #work-num{
+                  text-align: center;
+                  margin-left: -2em;
+                  margin-top: 1.4em;
+                  font-size: 10em;
+                  color: #EF8094;
+            }
             }
             .work2-info{
-                  margin-top: -8em;
-                  margin-left: 15%;
+                  margin-left: 12em;
                   h1{
+                        text-align: left;
                         width: 8em;
                         font-family: $Title-Font;
-                        font-size: 1.5em;
+                        font-size: 2em;
                   }
                   p{
                         text-align: left;
                         width: 22em;
-                        font-size: .9em;
+                        font-size: 1.1em;
                         font-family: $P-Font;
                         margin-top: 10px;
+                        word-spacing: 0.02em;
+
                   }
             }
       }
-      .work3-container{
+      .work3-wrapper{
             margin-top: 5em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+           @include backgroundImage();
+           border: none;
             gap: 2em;
-            img{
-                  width: 15em;
-                  margin-left: 5%;
+            .work3-img{
+                  width: 18em;
+                  height: 30em;
+                  @include backgroundImage();
+                  background-size: contain;
+                  background-image: url("../../Assets/Mask\ Group.png");
+                  border: none;
+                   #work-num{
+                  margin-top: .5em;
+                  font-size: 10em;
+                  color: #EF8094;
+            }
             }
             .work3-info{
                   h1{
                         width: 10em;
-                        font-size: 1.5em;
                         font-family: $Title-Font;
+                        text-align: left;
+                        font-size: 2em;
                   }
                   p{
                         text-align: left;
-                        width: 20em;
+                        width: 45vw;
+                        font-size: 1.1em;
                         font-family: $P-Font;
-                        margin-top: 10px;
-                        font-size: .9em;
+                        margin-top: .5em;
+                        word-spacing: 0.02em;
+
                   }
             }
       }
@@ -184,7 +288,6 @@ $P-Font: "DM Sans";
             transition: all ease-in .2s;
             cursor: pointer;
             margin-top: 8em;
-            margin-left: 5%;
             #angle-right{
                   font-size: .8em;
             }
@@ -204,67 +307,105 @@ $P-Font: "DM Sans";
       .title-container{
             margin-top: 5em;
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1.5em;
       }
-      .work1-container{
+      .work1-wrapper{
             margin-top: 5em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            img{
-                  width: 15em;
+            margin-left: -10%;
+            @include flexboxCentre();
+            .work1-img{
+                  width: 20em;
+                  #work-num{
+                  text-align: center;
+                  margin-left: -45%;
+                  margin-top:.3em;
+                  font-size: 8em;
+                  color: #EF8094;
+            }
             }
             .work1-info{
+                  width: 80vw;
+                  margin-left: 40%;
                   h1{
-                        width: 55vw;
                         font-family: $Title-Font;
                         font-size: 1.5em;
+                        width: 8em;
                   }
                   p{
-                        width: 60vw;
+                        width: 70vw;
                         font-family: $P-Font;
                         font-size: .9em;
                         margin-top: 10px;
                         margin-left: 0;
                   }
-            }
-      }
-      .work2-container{
-            margin-top: -5em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            img{
-                  width: 55em;
-                  margin-right: 20%;
-            }
-            .work2-info{
-                  margin-top: -8em;
-                  h1{
-                        width: 50vw;
-                        font-family: $Title-Font;
-                        font-size: 1.5em;
-                  }
-                  p{
-                        width: 60vw;
-                        font-size: .9em;
-                        font-family: $P-Font;
-                        margin-top: 10px;
-                        margin-left: 0;
+                  #work-num{
+                        position: absolute;
+                        top: 20%;
+                        left: 30%;
+                        font-size: 10em;
+                        color: #EF8094;
                   }
             }
       }
-      .work3-container{
+       .work2-wrapper{
+            margin-top: 5em;
+            margin-left: -10%;
+            @include flexboxCentre();
+            .work2-img{
+                  margin-top: 0em;
+                  height: 20em;
+                  width: 45em;
+                  @include backgroundImage();
+                  background-image: url("../../Assets/Group\ 1.png");
+                  border: none;
+                   #work-num{
+                  text-align: center;
+                  margin-left: -15%;
+                  margin-top: -.5em;
+                  font-size: 8em;
+                  color: #EF8094;
+            }
+      }
+      .work2-info{
+            margin-left: 15%;
+            h1{
+                  width: 55vw;
+                  font-family: $Title-Font;
+                  font-size: 1.5em;
+            }
+            p{
+                  width: 70vw;
+                  font-family: $P-Font;
+                  font-size: .9em;
+                  margin-top: 10px;
+                  margin-left: 0;
+            }
+      }
+}
+      .work3-wrapper{
             margin-top: 5em;
             display: flex;
             align-items: center;
             flex-direction: column;
             gap: 2em;
-            img{
-                  width: 15em;
+            position: relative;
+            .work3-img{
+                  width: 20em;
+                  height: 20em;
+                  @include backgroundImage();
+                  border: none;
+                  background-image: url("../../Assets/Mask\ Group.png");
+                  background-size: contain;
+                   #work-num{
+                  text-align: center;
+                  margin-left: -45%;
+                  margin-top:.3em;
+                  font-size: 8em;
+                  color: #EF8094;
+            }
             }
             .work3-info{
-                  margin-left: 5%;
+                  margin-left: 0%;
                   h1{
                         width: 50vw;
                         font-size: 1.5em;
@@ -301,4 +442,5 @@ $P-Font: "DM Sans";
             }
       }
 }
+
 }

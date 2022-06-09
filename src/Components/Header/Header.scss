@@ -1,4 +1,5 @@
 $Title-Font: "DM Serif Text";
+$header-font: "DM Serif Display";
 $P-Font: "DM Sans";
 
 
@@ -7,20 +8,21 @@ $P-Font: "DM Sans";
       display: flex;
       justify-content: space-between;
       width: 100vw;
-      height: 540px;
+      height: 640px;
       background: #F5F8FF;
       .banner-info{
             width: 50vw;
             height: 318px;
             margin-left: 5%;
-            margin-top: 5em;
+            margin-top: 10em;
             .info-box{
-                  font-family: $Title-Font;
-                  font-size: 1.5em;
+                  font-family: $header-font;
+                  font-size: 1.7em;
             }
             p{
+                  word-spacing: 2px;
                   font-family: $P-Font;
-                  font-size: 22px;
+                  font-size: 20px;
                   margin-top: 20px;
                   width: 25em;
             }
@@ -58,7 +60,7 @@ $P-Font: "DM Sans";
                  height: 33em;
                  position: absolute;
                  right: 0em;
-                 top: 8em;
+                 top: 15em;
            }
      }
 }
@@ -75,14 +77,14 @@ $P-Font: "DM Sans";
             width: 25em;
             height: 318px;
             margin-left: 5%;
-            margin-top: 1em;
+            margin-top: 5em;
             .info-box{
                   font-family: $Title-Font;
-                  font-size: 1.2em;
+                  font-size: 1em;
             }
             p{
                   font-family: $P-Font;
-                  font-size: 14px;
+                  font-size: 12px;
                   margin-top: 20px;
                   width: 25em;
             }
@@ -128,14 +130,18 @@ $P-Font: "DM Sans";
 @media (max-width: 600px){
       
 .header-wrapper{
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
       width: 100vw;
       background: #F5F8FF;
       .banner-info{
             padding-top: 1em;
+            position: absolute;
             width: 100vw;
-            margin-left: 5%;
-            margin-top: 0em;
+            left: 0%;
+            top: -4em;
             .info-box{
                   font-family: $Title-Font;
                   font-size: 1em;
@@ -174,12 +180,15 @@ $P-Font: "DM Sans";
       }
      .img-box{
            width: 100vw;
-           display: flex;
-           align-items: center;
-           margin-top: -8em;
+           height: auto;
+           display: block;
+           top: 30%;
+           right: 15%;
+           position: absolute;
            img{
-                 max-width: 100vw;
-                 height: auto;
+                 width: 80vw;
+                 min-width: 50vw;
+                 height: 20em;
            }
      }
 }

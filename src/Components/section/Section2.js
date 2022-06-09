@@ -1,9 +1,6 @@
 import React from 'react'
 import './Section2.scss'
 import underline2 from '../../Assets/underline(1).png'
-import work1 from '../../Assets/Group 2.png'
-import work2 from '../../Assets/Group 1.png'
-import work3 from '../../Assets/Mask Group.png'
 
 function Section2() {
   return (
@@ -12,8 +9,10 @@ function Section2() {
         <h1>How it works</h1>
         <img src={underline2} alt="" />
       </div>
-      <div className="work1-container"> {/* work-1 container */}
-        <img src={work1} alt="" />
+      <div className="work1-wrapper"> {/* work-1 wrapper*/}
+        <div className="work1-img">
+          <h1 id='work-num'>1</h1>
+      </div>
         <div className="work1-info"> {/* work-1 info */}
           <h1>Setup your profile & preferences</h1>
           <p>
@@ -22,18 +21,22 @@ function Section2() {
           </p>
         </div>
         </div>
-        <div className="work2-container"> {/* work-1 container */}
-          <img src={work2} alt="" />
+        <div className="work2-wrapper"> {/* work-1 wrapper */}
+        <div className="work2-img">
+          <h1 id='work-num'>2</h1>
+        </div>
           <div className="work2-info">  {/* work-1 info */}
             <h1>Review your custom box</h1>
             <p>
               Once we get to know you, we will show you the box we’ve crafted.
               This is your chance to approve it before we ship it to your house.
-            </p>
+          </p>
           </div>
         </div>
-        <div className="work3-container"> {/* work-1 container */}
-          <img src={work3} alt="" />
+        <div className="work3-wrapper"> {/* work-1 container */}
+        <div className="work3-img">
+            <h1 id='work-num'>3</h1>
+        </div>
           <div className="work3-info">  {/* work-1 info */}
             <h1>Try it on at home</h1>
             <p>

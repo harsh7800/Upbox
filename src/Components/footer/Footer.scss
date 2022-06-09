@@ -3,7 +3,7 @@ $Title-Font: "DM Serif Text";
 
 
 .footer-wrapper{
-      height: 650px;
+      height: 620px;
       background: #EEEEEE;
       border: 2px solid #C4C4C4;
       width: 97vw;
@@ -41,6 +41,7 @@ $Title-Font: "DM Serif Text";
                   display: flex;
                   flex-direction: column;
                   margin-top: 8em;
+                  margin-bottom: 2em;
                   h3{
                         font-family: $P-Font;
                         font-size: 1.5em;
@@ -146,7 +147,7 @@ $Title-Font: "DM Serif Text";
 @media (min-width: 600px) and (max-width: 900px) {
       
       .footer-wrapper{
-            height: 850px;
+            height: 960px;
             background: #EEEEEE;
             border: 2px solid #C4C4C4;
             width: 97vw;
@@ -245,6 +246,7 @@ $Title-Font: "DM Serif Text";
                         display: flex;
                         flex-direction: column;
                         margin-top: 3em;
+                        margin-bottom: 3em;
                         margin-left: 30%;
                         h3{
                               font-family: $P-Font;
@@ -293,7 +295,7 @@ $Title-Font: "DM Serif Text";
 @media (max-width: 600px){
       
       .footer-wrapper{
-            height: 950px;
+            height: auto;
             background: #EEEEEE;
             border: 2px solid #C4C4C4;
             width: 97vw;
@@ -393,6 +395,7 @@ $Title-Font: "DM Serif Text";
                         display: flex;
                         flex-direction: column;
                         margin-top: 3em;
+                        margin-bottom: 3em;
                         margin-left: 30%;
                         h3{
                               font-family: $P-Font;
@@ -418,9 +421,10 @@ $Title-Font: "DM Serif Text";
                   margin-bottom: 2em;
                   p{
                      font-family: $P-Font;
-                     font-size: 1.1em;
+                     font-size: .9em;
                      margin-left: 2.5%;
                      margin-top: 2em;
+                     letter-spacing: .02em;
                   }
                   .terms-policy{
                         margin-top: 2em;
