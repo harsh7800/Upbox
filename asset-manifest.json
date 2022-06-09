@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Upbox/static/css/main.598ce99d.css",
-    "main.js": "/Upbox/static/js/main.20ce8faa.js",
+    "main.js": "/Upbox/static/js/main.a5774e42.js",
     "static/media/BOX.png": "/Upbox/static/media/BOX.de67f5b54653aa44a709.png",
     "static/media/img4.png": "/Upbox/static/media/img4.f8a09f8389ac478d0b9b.png",
     "static/media/img2.png": "/Upbox/static/media/img2.a9dde9e0904e87585d8c.png",
@@ -14,10 +14,10 @@
     "static/media/box1.png": "/Upbox/static/media/box1.bbcceafb349d7a5bb739.png",
     "index.html": "/Upbox/index.html",
     "main.598ce99d.css.map": "/Upbox/static/css/main.598ce99d.css.map",
-    "main.20ce8faa.js.map": "/Upbox/static/js/main.20ce8faa.js.map"
+    "main.a5774e42.js.map": "/Upbox/static/js/main.a5774e42.js.map"
   },
   "entrypoints": [
     "static/css/main.598ce99d.css",
-    "static/js/main.20ce8faa.js"
+    "static/js/main.a5774e42.js"
   ]
 }
