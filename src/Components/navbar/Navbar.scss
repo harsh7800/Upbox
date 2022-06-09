@@ -1,0 +1,286 @@
+$Title-Font: "DM Serif Text";
+$P-Font: "DM Sans";
+$Title-Font: "DM Serif Text";
+$P-Font: "DM Sans";
+$Home-banner-bg: "rgba(245, 248, 255, 1)";
+$Plan-Section-bg: "#FFFFFF";
+$Navbar-bg: "#FFFFFF";
+$Footer-bg: "#EEEEEE";
+
+@mixin backgroundImage {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: 3px solid rgba(128, 128, 128, 0.251);
+}
+@mixin flexboxCentre {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+}
+
+.navbar-wrapper{
+      width: 100vw;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #FFFFFF;
+      img{
+            width: 9em;
+            margin-left: 5%;
+      }
+      
+      .navbar-container{
+            margin-right: 5%;
+            #navbtn{
+                  text-decoration: none;
+                  font-family: $P-Font;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 18px;
+                  letter-spacing: 0.16em;
+                  color: #000000;
+                  transition: color ease-in .2s;
+                  margin-left: 50px;
+                  &:hover{
+                        color: pink;
+                        transition: color ease-in .2s;
+                  }
+            }
+            button{
+                  background: none;
+                  border: 2px solid black;
+                  width: 124px;
+                  height: 37px; 
+                  border-radius: 25px;
+                  cursor: pointer;
+                  margin-left: 50px;
+                  font-family: $P-Font;
+                  transition: all ease-in .2s;
+                  #angle-right{
+                        font-size: .8em;
+                        transition: all ease-in .2s;
+                  }
+                  &:hover{
+                        border: 2px solid pink;
+                        transition: all ease-in .2s;
+
+                        #angle-right{
+                              font-size: 1.2em;
+                              transition: all ease-in .2s;
+                              margin-left: 5px;
+                        }
+                  }
+            }
+      }
+      #menuBtn{
+            display: none;
+      }
+}
+
+@media (min-width: 600px) and (max-width: 950px) {
+      .navbar-wrapper{
+      width: 100vw;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #FFFFFF;
+      img{
+            width: 7em;
+            margin-left: 5%;
+      }
+      .navbar-container{
+            margin-right: 4%;
+            #navbtn{
+                  text-decoration: none;
+                  font-family: $P-Font;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 10px;
+                  line-height: 18px;
+                  letter-spacing: 0.16em;
+                  color: #000000;
+                  transition: color ease-in .2s;
+                  margin-left: 20px;
+                  &:hover{
+                        color: pink;
+                        transition: color ease-in .2s;
+                  }
+            }
+            button{
+                  background: none;
+                  border: 2px solid black;
+                  width: 90px;
+                  height: 37px; 
+                  border-radius: 25px;
+                  cursor: pointer;
+                  margin-left: 25px;
+                  font-size: .8em;
+                  font-family: $P-Font;
+                  transition: all ease-in .2s;
+                  #angle-right{
+                        font-size: .8em;
+                        transition: all ease-in .2s;
+                  }
+                  &:hover{
+                        border: 2px solid pink;
+                        transition: all ease-in .2s;
+
+                        #angle-right{
+                              font-size: 1.2em;
+                              transition: all ease-in .2s;
+                              margin-left: 5px;
+                        }
+                  }
+            }
+      }
+      #menuBtn{
+            display: none;
+      }
+}
+}
+@media (max-width: 600px){
+      .navbar-wrapper{
+      width: 100vw;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #FFFFFF;
+      position: relative;
+      img{
+            width: 9em;
+            margin-left: 5%;
+      }
+      .navbar-container{
+             position: fixed;
+           width: 70vw;
+           height: 40em;
+           top: 0;
+           left: 100%;
+           transition: left ease-in .3s;
+           background-color: rgb(255, 255, 255);
+           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-right: 4%;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+            #navbtn{
+                  margin-top: 6em;
+                  text-decoration: none;
+                  font-family: $P-Font;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 10px;
+                  line-height: 18px;
+                  letter-spacing: 0.16em;
+                  color: #000000;
+                  transition: color ease-in .2s;
+                  margin-left: 20px;
+                  &:hover{
+                        color: pink;
+                        transition: color ease-in .2s;
+                  }
+            }
+            button{
+                  margin-top: 6em;
+                  background: none;
+                  border: 2px solid black;
+                  width: 90px;
+                  height: 37px; 
+                  border-radius: 25px;
+                  cursor: pointer;
+                  margin-left: 15px;
+                  font-size: .8em;
+                  font-family: $P-Font;
+                  transition: all ease-in .2s;
+                  #angle-right{
+                        font-size: .8em;
+                        transition: all ease-in .2s;
+                  }
+                  &:hover{
+                        border: 2px solid pink;
+                        transition: all ease-in .2s;
+
+                        #angle-right{
+                              font-size: 1.2em;
+                              transition: all ease-in .2s;
+                              margin-left: 5px;
+                        }
+                  }
+            }
+      
+      }
+     .navbar-container.show{
+           position: fixed;
+           width: 70vw;
+           height: 40em;
+           top: 0;
+           left: 30%;
+           transition: left ease-in .3s;
+           background-color: rgb(255, 255, 255);
+           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-right: 4%;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+            #navbtn{
+                  margin-top: 6em;
+                  text-decoration: none;
+                  font-family: $P-Font;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 10px;
+                  line-height: 18px;
+                  letter-spacing: 0.16em;
+                  color: #000000;
+                  transition: color ease-in .2s;
+                  margin-left: 20px;
+                  &:hover{
+                        color: pink;
+                        transition: color ease-in .2s;
+                  }
+            }
+            button{
+                  margin-top: 6em;
+                  background: none;
+                  border: 2px solid black;
+                  width: 90px;
+                  height: 37px; 
+                  border-radius: 25px;
+                  cursor: pointer;
+                  margin-left: 15px;
+                  font-size: .8em;
+                  font-family: $P-Font;
+                  transition: all ease-in .2s;
+                  #angle-right{
+                        font-size: .8em;
+                        transition: all ease-in .2s;
+                  }
+                  &:hover{
+                        border: 2px solid pink;
+                        transition: all ease-in .2s;
+
+                        #angle-right{
+                              font-size: 1.2em;
+                              transition: all ease-in .2s;
+                              margin-left: 5px;
+                        }
+                  }
+            }
+      
+      }
+      #menuBtn{
+            position: fixed;
+            right: 5%;
+            display: block;
+            font-size: 1.5em;
+            cursor: pointer;
+            z-index: 1000;
+      }
+}
+}

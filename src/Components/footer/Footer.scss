@@ -1,0 +1,440 @@
+$P-Font: "DM Sans";
+$Title-Font: "DM Serif Text";
+
+
+.footer-wrapper{
+      height: 650px;
+      background: #EEEEEE;
+      border: 2px solid #C4C4C4;
+      width: 97vw;
+      margin-left: 1%;
+      margin-top: 5em;
+      .logo-social-container{
+            margin-top: 5em;
+            display: flex;
+            justify-content: space-between;
+            #logo{
+                  width: 12em;
+                  margin-left: 6.5%;
+            }
+            .social-container{
+                  margin-right: 4%;
+                  img{
+                        width: 2em;
+                        margin-right: 30px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transition: all ease-in .2s;
+                        &:hover{
+                              opacity: .6;
+                              transition: all ease-in .2s;
+                        }
+                  }
+            }
+      }
+      .footer-navlinks{
+            margin-top: -3em;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 28vw 25vw 22vw 10vw;
+            .upbox{
+                  display: flex;
+                  flex-direction: column;
+                  margin-top: 8em;
+                  h3{
+                        font-family: $P-Font;
+                        font-size: 1.5em;
+                  }
+                  #navlinks{
+                        font-family: $P-Font;
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.673);
+                        margin-top: 20px;
+                        transition: all ease-in .2s;
+                        &:hover{
+                              color: pink;
+                              transition: all ease-in .2s;
+                        }
+                  }
+            }
+            .find-us-on{
+                  display: flex;
+                  margin-top: 8em;
+                  flex-direction: column;
+                  h3{
+                       font-family: $P-Font;
+                        font-size: 1.5em;
+                  }
+                  #navlinks{
+                        font-family: $P-Font;
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.673);
+                        margin-top: 20px;
+                        &:hover{
+                              color: pink;
+                              transition: all ease-in .2s;
+                        }
+                  }
+            }
+            .product{
+                  display: flex;
+                  flex-direction: column;
+                  margin-top: 8em;
+                  h3{
+                        font-family: $P-Font;
+                        font-size: 1.5em;
+                  }
+                  #navlinks{
+                        font-family: $P-Font;
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.673);
+                        margin-top: 20px;
+                        &:hover{
+                              color: pink;
+                              transition: all ease-in .2s;
+                        }
+                  }
+            }
+            .help{
+                  display: flex;
+                  flex-direction: column;
+                  margin-top: 8em;
+                  h3{
+                        font-family: $P-Font;
+                        font-size: 1.5em;
+                  }
+                  #navlinks{
+                        font-family: $P-Font;
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.673);
+                        margin-top: 20px;
+                        &:hover{
+                              color: pink;
+                              transition: all ease-in .2s;
+                        }
+                  }
+            }
+      }
+      .copyright{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 11.5%;
+            margin-bottom: 2em;
+            p{
+               font-family: $P-Font;
+               font-size: 1.1em;
+               margin-left: 7%;
+               margin-top: 2em;
+            }
+            .terms-policy{
+                  margin-top: 2em;
+                  #navlinks{
+                        font-family: $P-Font;
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.673);
+                        margin-left: 20px;
+                        &:hover{
+                              color: pink;
+                              transition: all ease-in .2s;
+                        }
+                  }
+            }
+      }
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+      
+      .footer-wrapper{
+            height: 850px;
+            background: #EEEEEE;
+            border: 2px solid #C4C4C4;
+            width: 97vw;
+            margin-left: 1.5%;
+            margin-top: 5em;
+            .logo-social-container{
+                  margin-top: 5em;
+                  display: flex;
+                  justify-content: space-between;
+                  #logo{
+                        width: 8em;
+                        margin-left: 2.5%;
+                  }
+                  .social-container{
+                        margin-right: 4%;
+                        img{
+                              width: 2em;
+                              margin-right: 20px;
+                              border-radius: 10px;
+                              cursor: pointer;
+                              transition: all ease-in .2s;
+                              &:hover{
+                                    opacity: .6;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+            }
+            .footer-navlinks{
+                  margin-top: -3em;
+                  display: grid;
+                  justify-content: space-between;
+                  grid-template-columns: 45vw 45vw;
+                  .upbox{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 6em;
+                        margin-left: 6%;
+                        h3{
+                              font-family: $P-Font;
+                              font-size: 1.2em;
+                        }
+                        #navlinks{
+                              font-family: $P-Font;
+                              text-decoration: none;
+                              color: rgba(0, 0, 0, 0.673);
+                              margin-top: 20px;
+                              transition: all ease-in .2s;
+                              &:hover{
+                                    color: pink;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+                  .find-us-on{
+                        display: flex;
+                        margin-top: 6em;
+                        margin-left: 30%;
+                        flex-direction: column;
+                        h3{
+                             font-family: $P-Font;
+                              font-size: 1.2em;
+                        }
+                        #navlinks{
+                              font-family: $P-Font;
+                              text-decoration: none;
+                              color: rgba(0, 0, 0, 0.673);
+                              margin-top: 20px;
+                              &:hover{
+                                    color: pink;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+                  .product{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 3em;
+                        margin-left: 6%;
+                        h3{
+                              font-family: $P-Font;
+                              font-size: 1.2em;
+                        }
+                        #navlinks{
+                              font-family: $P-Font;
+                              text-decoration: none;
+                              color: rgba(0, 0, 0, 0.673);
+                              margin-top: 20px;
+                              &:hover{
+                                    color: pink;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+                  .help{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 3em;
+                        margin-left: 30%;
+                        h3{
+                              font-family: $P-Font;
+                              font-size: 1.2em;
+                        }
+                        #navlinks{
+                              font-family: $P-Font;
+                              text-decoration: none;
+                              color: rgba(0, 0, 0, 0.673);
+                              margin-top: 20px;
+                              &:hover{
+                                    color: pink;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+            }
+            .copyright{
+                  display: flex;
+                  flex-direction: column-reverse;
+                  justify-content: space-between;
+                  margin-right: 11.5%;
+                  margin-bottom: 2em;
+                  p{
+                     font-family: $P-Font;
+                     font-size: 1.1em;
+                     margin-left: 2.5%;
+                     margin-top: 2em;
+                  }
+                  .terms-policy{
+                        margin-top: 2em;
+                        #navlinks{
+                              font-family: $P-Font;
+                              text-decoration: none;
+                              color: rgba(0, 0, 0, 0.673);
+                              margin-left: 20px;
+                              &:hover{
+                                    color: pink;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+            }
+      }
+}
+@media (max-width: 600px){
+      
+      .footer-wrapper{
+            height: 950px;
+            background: #EEEEEE;
+            border: 2px solid #C4C4C4;
+            width: 97vw;
+            margin-left: 1.5%;
+            margin-top: 5em;
+            .logo-social-container{
+                  margin-top: 5em;
+                  display: flex;
+                  justify-content: space-between;
+                  #logo{
+                        width: 6em;
+                        max-width: 8em;
+                        margin-left: 2.5%;
+                  }
+                  .social-container{
+                        margin-right: 4%;
+                        img{
+                              width: 1.7em;
+                              margin-right: 6px;
+                              border-radius: 10px;
+                              cursor: pointer;
+                              transition: all ease-in .2s;
+                              &:hover{
+                                    opacity: .6;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+            }
+            .footer-navlinks{
+                  margin-top: -3em;
+                  display: grid;
+                  justify-content: space-between;
+                  grid-template-columns: 45vw 45vw;
+                  .upbox{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 6em;
+                        margin-left: 6%;
+                        h3{
+                              font-family: $P-Font;
+                              font-size: 1.2em;
+                        }
+                        #navlinks{
+                              font-family: $P-Font;
+                              text-decoration: none;
+                              color: rgba(0, 0, 0, 0.673);
+                              margin-top: 20px;
+                              transition: all ease-in .2s;
+                              &:hover{
+                                    color: pink;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+                  .find-us-on{
+                        display: flex;
+                        margin-top: 6em;
+                        margin-left: 30%;
+                        flex-direction: column;
+                        h3{
+                             font-family: $P-Font;
+                              font-size: 1.2em;
+                        }
+                        #navlinks{
+                              font-family: $P-Font;
+                              text-decoration: none;
+                              color: rgba(0, 0, 0, 0.673);
+                              margin-top: 20px;
+                              &:hover{
+                                    color: pink;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+                  .product{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 3em;
+                        margin-left: 6%;
+                        h3{
+                              font-family: $P-Font;
+                              font-size: 1.2em;
+                        }
+                        #navlinks{
+                              font-family: $P-Font;
+                              text-decoration: none;
+                              color: rgba(0, 0, 0, 0.673);
+                              margin-top: 20px;
+                              &:hover{
+                                    color: pink;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+                  .help{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 3em;
+                        margin-left: 30%;
+                        h3{
+                              font-family: $P-Font;
+                              font-size: 1.2em;
+                        }
+                        #navlinks{
+                              font-family: $P-Font;
+                              text-decoration: none;
+                              color: rgba(0, 0, 0, 0.673);
+                              margin-top: 20px;
+                              &:hover{
+                                    color: pink;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+            }
+            .copyright{
+                  display: flex;
+                  flex-direction: column-reverse;
+                  justify-content: space-between;
+                  margin-right: 11.5%;
+                  margin-bottom: 2em;
+                  p{
+                     font-family: $P-Font;
+                     font-size: 1.1em;
+                     margin-left: 2.5%;
+                     margin-top: 2em;
+                  }
+                  .terms-policy{
+                        margin-top: 2em;
+                        #navlinks{
+                              font-family: $P-Font;
+                              text-decoration: none;
+                              color: rgba(0, 0, 0, 0.673);
+                              margin-left: 20px;
+                              &:hover{
+                                    color: pink;
+                                    transition: all ease-in .2s;
+                              }
+                        }
+                  }
+            }
+      }
+}

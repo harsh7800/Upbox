@@ -1,0 +1,272 @@
+$Title-Font: "DM Serif Text";
+$P-Font: "DM Sans";
+@mixin backgroundImage {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: 3px solid rgba(128, 128, 128, 0.251);
+}
+@mixin flexboxCentre {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+}
+
+.section3-wrapper{
+      width: 100vw;
+      background-color: #F5F8FF;
+      margin-top: 5em;
+      text-align: center;
+      .title-container{
+           h1{
+                 font-family: $Title-Font;
+                 padding-top: 1.5em;
+                 text-align: center;
+                 font-size: 2.5em;
+           } 
+      }
+      .posts-container{
+            margin-top: 5em;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 20vw 20vw 20vw 20vw;
+            grid-template-rows: 20em;
+            grid-gap: 40px;
+            .post1-container{
+                  .post1{
+                        background-image: url("../../Assets/img1.png");
+                        width: 20vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                  p{
+                        font-family: $P-Font;
+                  }
+            }
+            .post2-container{
+                  .post2{
+                        background-image: url("../../Assets/img2.png");
+                        width: 20vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                   p{
+                        font-family: $P-Font;
+                  }
+            }
+            .post3-container{
+                  .post3{
+                        background-image: url("../../Assets/img3.png");
+                        width: 20vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                   p{
+                        font-family: $P-Font;
+                  }
+            }
+            .post4-container{
+                  .post4{
+                        background-image: url("../../Assets/img4.png");
+                        width: 20vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                   p{
+                        font-family: $P-Font;
+                  }
+            }
+      }
+      button{
+            margin-top: 25em;
+            margin-bottom: 5em;
+            cursor: pointer;
+            width: 15em;
+            height: 3em;
+            border-radius: 25px;
+            font-family: $P-Font;
+            background: #EF8094;
+            border: 4px solid #EF8094;
+            transition: all ease-in .2s;
+            color: white;
+            &:hover{
+                  background: #e75b75;
+                  transition: all ease-in .2s;
+                  #angle-right{
+                        font-size: 1.2em;
+                        margin-left: 10px;
+                  }
+            }
+      }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+      .section3-wrapper{
+      width: 100vw;
+      background-color: #F5F8FF;
+      margin-top: 5em;
+      .title-container{
+           h1{
+                 font-family: $Title-Font;
+                 padding-top: 3em;
+                 text-align: center;
+           } 
+      }
+      .posts-container{
+            margin-top: 5em;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 40vw 40vw;
+            grid-template-rows: 30em;
+            grid-column-gap: 20px;
+            grid-row-gap: 70px;
+            .post1-container{
+                  .post1{
+                        background-image: url("../../Assets/img1.png");
+                        width: 40vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                  p{
+                        font-family: $P-Font;
+                  }
+            }
+            .post2-container{
+                  .post2{
+                        background-image: url("../../Assets/img2.png");
+                        width: 40vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                   p{
+                        font-family: $P-Font;
+                  }
+            }
+            .post3-container{
+                  .post3{
+                        background-image: url("../../Assets/img3.png");
+                        width: 40vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                   p{
+                        font-family: $P-Font;
+                  }
+            }
+            .post4-container{
+                  .post4{
+                        background-image: url("../../Assets/img4.png");
+                        width: 40vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                   p{
+                        font-family: $P-Font;
+                  }
+            }
+      }
+      button{
+                  margin-top: 5em;
+            width: 15em;
+            height: 3em;
+            border-radius: 25px;
+            font-family: $P-Font;
+            background: #EF8094;
+            border: 4px solid #EF8094;
+            color: white;
+            &:hover{
+                  #angle-right{
+                        font-size: 1.2em;
+                        margin-left: 10px;
+                  }
+            }
+            }
+}
+}
+
+@media (max-width: 600px) {
+       .section3-wrapper{
+      width: 100vw;
+      background-color: #F5F8FF;
+      margin-top: 5em;
+      .title-container{
+           h1{
+                 font-family: $Title-Font;
+                 padding-top: 3em;
+                 text-align: center;
+           } 
+      }
+      .posts-container{
+            margin-top: 5em;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 90vw;
+            grid-template-rows: 30em;
+            grid-column-gap: 20px;
+            grid-row-gap: 100px;
+            .post1-container{
+                  .post1{
+                        background-image: url("../../Assets/img1.png");
+                        width: 90vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                  p{
+                        font-family: $P-Font;
+                  }
+            }
+            .post2-container{
+                  .post2{
+                        background-image: url("../../Assets/img2.png");
+                        width: 90vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                   p{
+                        font-family: $P-Font;
+                  }
+            }
+            .post3-container{
+                  .post3{
+                        background-image: url("../../Assets/img3.png");
+                        width: 90vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                   p{
+                        font-family: $P-Font;
+                  }
+            }
+            .post4-container{
+                  .post4{
+                        background-image: url("../../Assets/img4.png");
+                        width: 90vw;
+                        height: 30em;
+                        @include backgroundImage();
+                  }
+                   p{
+                        font-family: $P-Font;
+                  }
+            }
+      }
+      button{
+            margin-top: 5em;
+           width: 15em;
+            height: 3em;
+            border-radius: 25px;
+            font-family: $P-Font;
+            background: #EF8094;
+            border: 4px solid #EF8094;
+            color: white;
+            &:hover{
+                  #angle-right{
+                        font-size: 1.2em;
+                        margin-left: 10px;
+                  }
+            }
+            }
+      }
+}
