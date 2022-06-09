@@ -8,23 +8,23 @@ function Navbar() {
   return (
     <nav className="navbar-wrapper">
       <img src={logo} alt="*Logo" />
-      <div className={active ? "navbar-container" : "navbar-container show"}>
-        <Link id="navbtn" to="/this-mmonth">
+      <div className={active ? "navbar-container " : "navbar-container show"}>
+        <Link id="navbtn" to="/this-month" onClick={() => setActive("false")}>
           THIS-MONTH
         </Link>
-        <Link id="navbtn" to="/skin">
+        <Link id="navbtn" to="/skin" onClick={() => setActive("false")}>
           SKIN
         </Link>
-        <Link id="navbtn" to="/hair">
+        <Link id="navbtn" to="/hair" onClick={() => setActive("false")}>
           HAIR
         </Link>
-        <Link id="navbtn" to="/bath">
+        <Link id="navbtn" to="/bath" onClick={() => setActive("false")}>
           BATH
         </Link>
-        <Link id="navbtn" to="/sale">
+        <Link id="navbtn" to="/sale" onClick={() => setActive("false")}>
           SALE
         </Link>
-        <button>
+        <button onClick={() => setActive("false")}>
           LOG IN <i id="angle-right" className="fa-solid fa-angle-right"></i>
         </button>
       </div>
