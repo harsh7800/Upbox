@@ -22,16 +22,16 @@ function Navbar() {
         <Link id="navbtn" to="/this-month" onClick={() => setActive(false)}>
           THIS-MONTH
         </Link>
-        <Link id="navbtn" to="/skin" onClick={() => setActive("false")}>
+        <Link id="navbtn" to="/skin" onClick={() => setActive(false)}>
           SKIN
         </Link>
-        <Link id="navbtn" to="/hair" onClick={() => setActive("false")}>
+        <Link id="navbtn" to="/hair" onClick={() => setActive(false)}>
           HAIR
         </Link>
-        <Link id="navbtn" to="/bath" onClick={() => setActive("false")}>
+        <Link id="navbtn" to="/bath" onClick={() => setActive(false)}>
           BATH
         </Link>
-        <Link id="navbtn" to="/sale" onClick={() => setActive("false")}>
+        <Link id="navbtn" to="/sale" onClick={() => setActive(false)}>
           SALE
         </Link>
         <button onClick={() => setActive(false)}>
